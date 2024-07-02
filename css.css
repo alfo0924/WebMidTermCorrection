@@ -1,0 +1,202 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: #a2a2a2;
+    margin: 0;
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+    flex-flow: row wrap;
+
+    text-align: center;
+
+
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/*added .c3031 class in order to set it more specifically*/
+.c3031:hover
+{
+    padding: 50px;
+    cursor: pointer;
+
+    /*border-radius changes to 10%*/
+    border-radius: 10%;
+    /*cancel  border solid line to smooth the animation*/
+    border: 5px  rgba(2, 221, 250, 0.73);
+    background-color: rgba(2, 221, 250, 0.73);
+
+    /*added transition*/
+    transition: background-color 1.5s ease-in-out;
+}
+
+/*added .c3031 to set the details*/
+.c3031 p
+{
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+
+/*binding for hover on.c3031 area or img that gets border-radius effects*/
+
+.c3031:hover img
+{
+    border-radius: 10%;
+}
+.c3031 img:hover
+{
+    border-radius: 10%;
+}
+
+
+
+
+
+
+
+/*.c3031:hover p {*/
+/*    visibility: visible;*/
+/*    transition: visibility 1.5s ease-in-out;*/
+/*}*/
+
+/*.c3031 p {*/
+/*    visibility: hidden;*/
+/*}*/
+
+
+
+
+
+
+/*.c3031*/
+/*{*/
+/*    flex-direction: column;*/
+/*    display: flex;*/
+/*    !*background: red;*!*/
+
+
+/*}*/
+
+
+/*.c3031 :hover*/
+/*{*/
+/*    padding: 50px;*/
+/*    cursor: pointer;*/
+/*    border-radius: 20%;*/
+/*    border: solid 5px rgba(2, 221, 250, 0.73);;*/
+
+/*    background-color: rgba(2, 221, 250, 0.73);*/
+
+/*    transition: background-color 1.5s ease-in-out;*/
+/*}*/
+
+
+
+
+/*.c3031:hover p {*/
+/*    visibility: visible;*/
+/*    transition: visibility 1.5s ease-in-out;*/
+/*}*/
+
+/*.c3031 p {*/
+/*    visibility: hidden;*/
+/*}*/
+
+
+
+
+
+/*p*/
+/*{*/
+/*    text-align: center;*/
+
+
+/*}*/
+
+/*.column  img:hover*/
+/*{*/
+/*    padding: 50px;*/
+/*    cursor: pointer;*/
+/*    border-radius: 20%;*/
+/*    border: solid 5px rgb(61, 61, 61);*/
+
+/*    background-color: rgba(2, 221, 250, 0.73);*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+    .column {
+        flex: 33%;
+        max-width: 33%;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 700px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
